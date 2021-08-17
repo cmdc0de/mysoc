@@ -1,4 +1,8 @@
 
+romtb:
+	iverilog -g2005-sv -Irtl -o out/romtb.out sim/romtb.v
+	vvp out/romtb.out
+
 memtb:
 	iverilog -g2005-sv -Irtl -o out/memtb.out sim/memtb.v
 	vvp out/memtb.out
