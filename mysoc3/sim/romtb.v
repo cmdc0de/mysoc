@@ -5,7 +5,7 @@
 module romtb();
 	parameter ADDR_WIDTH=16;
 	parameter DATA_WIDTH=32;
-	parameter DEPTH=32;
+	parameter DEPTH=16;
 
 	reg clk;
 	reg cs;

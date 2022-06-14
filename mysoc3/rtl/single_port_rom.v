@@ -27,7 +27,7 @@ module single_port_rom
 
 		initial begin
 			$display("loading");
-			$readmemh("rom.hex",mem,0,16);
+			$readmemh("rom.hex",mem,0,DEPTH-1);
 			$display("done");
 
 			//integer j;
