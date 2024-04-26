@@ -21,7 +21,8 @@ module regtb();
 		$display("start: resetting register");
 
 		//reset
-		we<=1;sel<=1;rstn<=0;inData<=16'b101010101010101010101010;clk<=0;
+		//we<=1;sel<=1;rstn<=0;inData<=16'b101010101010101010101010;clk<=0;
+		we<=1;sel<=1;rstn<=0;inData<=16'b1010101010101010;clk<=0;
 		#5;
 		$display("time=%0t rstn=0x%0h we=0x%0h sel=0x%0h indata=0x%0b outData=0x%0b"
 				  ,$time,rstn,we,sel,inData,outData);
